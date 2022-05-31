@@ -5,7 +5,7 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 
-@WebServlet(name = "AdicionaEmailCockie", value = "/AdicionaEmailCockie")
+@WebServlet(name = "adicionaEmailCookie", value = "/adicionaEmailCookie")
 public class AdicionaEmailCookie extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -17,7 +17,7 @@ public class AdicionaEmailCookie extends HttpServlet {
 
         String emailRecebido = request.getParameter("email");
         response.addCookie(new Cookie("email", emailRecebido));
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/login.html");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/Login.html");
         dispatcher.forward(request, response);
 
     }

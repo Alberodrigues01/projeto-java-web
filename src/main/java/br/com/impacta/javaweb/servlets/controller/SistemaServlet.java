@@ -16,7 +16,8 @@ public class SistemaServlet extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
 
         Cookie[] cookies = request.getCookies();
         String email = null;
@@ -29,7 +30,7 @@ public class SistemaServlet extends HttpServlet {
         }
         if (email == null) {
             RequestDispatcher dispatcher = request.getRequestDispatcher("/coletaEmail");
-            dispatcher.forward(request, response);
+            dispatcher.forward(request , response);
         } else {
 
             Usuario usuarioSistema = (Usuario) request.getSession().getAttribute("usuario");
@@ -45,7 +46,7 @@ public class SistemaServlet extends HttpServlet {
             out.println("<h1>Bem Vindo " + usuarioSistema.getLogin() + "!" + "</h1>");
             out.println("<h3>Esta é a página principal do sistema !!! </h3>");
             out.println("<h3><a href=\"Login.html\">Logout</a></h3>");
-            out.println("<body>");
+            out.println("</body>");
             out.println("</html>");
         }
     }

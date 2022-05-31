@@ -8,7 +8,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "ColetaEmail", value = "/ColetaEmail")
+@WebServlet(name = "coletaEmail", value = "/coletaEmail")
 public class ColetaEmail extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -28,13 +28,12 @@ public class ColetaEmail extends HttpServlet {
         out.println("<title> Cadastro de Email </title>");
         out.println("</head>");
         out.println("<body>");
-        out.println("<h1>"+ usuarioSistema.getNome() + "informe o seu email" + "</h1>");
-        out.println("form method = \"post\" action=\"adicionaEmailCookie\">");
-        out.println("Email: <input type =\"text\" name=\"email\" size=\"50\"><br>");
+        out.println("<h1>" + usuarioSistema.getLogin()  +" informe o seu email: " + "</h1>");
+        out.println("<form method=\"post\" action=\"adicionaEmailCookie\">");
+        out.println("Email: <input type=\"text\" name=\"email\" size=\"50\"><br>");
         out.println("<input type=\"Submit\" value=\"Enviar\"><br>");
-        out.println("<h3><a href=\"Login.html\">Logout</a></h3>");
-        out.println("<body>");
+        out.println("</form>");
+        out.println("</body>");
         out.println("</html>");
-
     }
 }

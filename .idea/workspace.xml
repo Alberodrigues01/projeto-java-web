@@ -9,19 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9f7fef8-5c38-4bd4-8a1e-9c7dea851194" name="Changes" comment="Implementação do método de cadastro do usuário">
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/impacta/javaweb/servlets/controller/AdicionaEmailCookie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/impacta/javaweb/servlets/controller/ColetaEmail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/impacta/javaweb/servlets/controller/SistemaServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/impacta/javaweb/servlets/controller/ValidaLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/impacta/javaweb/servlets/model/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/erroLogin.html" afterDir="false" />
+    <list default="true" id="b9f7fef8-5c38-4bd4-8a1e-9c7dea851194" name="Changes" comment="Implementação de Cookie">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/impacta/javaweb/servlets/projetojavaweb/CadastroUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/impacta/javaweb/servlets/controller/CadastroUsuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/impacta/javaweb/servlets/projetojavaweb/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/impacta/javaweb/servlets/controller/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/impacta/javaweb/servlets/controller/AdicionaEmailCookie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/impacta/javaweb/servlets/controller/AdicionaEmailCookie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/impacta/javaweb/servlets/controller/ColetaEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/impacta/javaweb/servlets/controller/ColetaEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/impacta/javaweb/servlets/controller/SistemaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/impacta/javaweb/servlets/controller/SistemaServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,21 +50,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\JavaWebImpacta\Projetos\projeto-java-web\src\main\webapp\" />
@@ -80,20 +73,14 @@
       <recent name="br.com.impacta.javaweb.servlets.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Login.html (1)">
-    <configuration name="Login.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/Login.html">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.78">
+    <configuration name="Login.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:8080/Login.html">
       <method v="2" />
     </configuration>
-    <configuration name="Login.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/projeto-java-web/src/main/webapp/Login.html" useBuiltInWebServerPort="true">
+    <configuration name="cadastro_usuario.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:8080/projeto_java_web_war_exploded/cadastro_usuario.html">
       <method v="2" />
     </configuration>
-    <configuration name="Login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/projeto_java_web_war_exploded/Login.html">
-      <method v="2" />
-    </configuration>
-    <configuration name="cadastro_usuario.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/projeto_java_web_war_exploded/cadastro_usuario.html">
-      <method v="2" />
-    </configuration>
-    <configuration name="erroLogin.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/erroLogin.html">
+    <configuration name="erroLogin.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:8080/erroLogin.html">
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 8.5.78" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.78" ALTERNATIVE_JRE_ENABLED="false">
@@ -183,22 +170,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.Login.html (1)" />
-      <item itemvalue="JavaScript Debug.Login.html (2)" />
+      <item itemvalue="JavaScript Debug.Login.html" />
       <item itemvalue="JavaScript Debug.erroLogin.html" />
       <item itemvalue="JavaScript Debug.cadastro_usuario.html" />
-      <item itemvalue="JavaScript Debug.Login.html" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.78" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JavaScript Debug.Login.html (1)" />
-        <item itemvalue="JavaScript Debug.Login.html (2)" />
-        <item itemvalue="JavaScript Debug.erroLogin.html" />
-        <item itemvalue="JavaScript Debug.Login.html" />
-        <item itemvalue="JavaScript Debug.cadastro_usuario.html" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -209,7 +185,10 @@
       <option name="presentableId" value="Default" />
       <updated>1653430833839</updated>
       <workItem from="1653430835546" duration="12166000" />
-      <workItem from="1653600522570" duration="14412000" />
+      <workItem from="1653600522570" duration="15391000" />
+      <workItem from="1654031944603" duration="4231000" />
+      <workItem from="1654036423409" duration="86000" />
+      <workItem from="1654036553704" duration="2474000" />
     </task>
     <task id="LOCAL-00001" summary="Formulário Cadastro Usuario">
       <created>1653437366702</created>
@@ -225,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653440242182</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implementação de Cookie">
+      <created>1653615402952</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1653615402953</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +244,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Formulário Cadastro Usuario" />
     <MESSAGE value="Implementação do método de cadastro do usuário" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementação do método de cadastro do usuário" />
+    <MESSAGE value="Implementação de Cookie" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementação de Cookie" />
   </component>
 </project>
